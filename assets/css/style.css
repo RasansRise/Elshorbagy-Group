@@ -3732,7 +3732,6 @@ a.text-theme:hover,
   position: relative;
   margin-bottom: 21px;
   padding-right: 30px;
-  max-width: 250px;
 }
 .footer-info-list .info i:first-child {
   position: absolute;
@@ -3961,14 +3960,14 @@ a.text-theme:hover,
   position: relative;
   font-family: var(--title-font);
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--title-color);
 }
 .main-menu a:hover {
   color: var(--theme-color);
 }
 .main-menu > ul > li {
-  margin: 0 0 0 18px;
+  margin: 0 0 0 30px;
 }
 .main-menu > ul > li > a .new-label {
   position: absolute;
@@ -13147,7 +13146,7 @@ blockquote.vs-quote .quote-author {
   right: 0;
   left: 0;
   top: 0px;
-  padding:20px 0;
+  padding:40px 0;
   /* Large devices */
   /* Medium devices */
 }
@@ -13155,16 +13154,7 @@ blockquote.vs-quote .quote-author {
   background-color: var(--theme-color);
   color: var(--white-color);
 }
-@media (max-width: 1199px) {
-  .header-ltb7 {
-    top: 40px;
-  }
-}
-@media (max-width: 991px) {
-  .header-ltb7 {
-    top: 0;
-  }
-}
+
 .header-ltb7 .container {
   max-width: calc(1600px + var(--container-gutters));
 }
@@ -13391,7 +13381,7 @@ blockquote.vs-quote .quote-author {
   font-weight: 400;
 }
 .hero-info.tb7 .media-link, .hero-info.tb8 .media-link {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
 }
 .hero-info.tb7 .media-icon, .hero-info.tb8 .media-icon {
