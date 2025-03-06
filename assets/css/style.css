@@ -5208,8 +5208,8 @@ a.text-theme:hover,
 }
 
 .breadcumb-wrapper {
-  padding-top: 140px;
-  padding-bottom: 135px;
+  padding-top: 250px;
+  padding-bottom: 250px;
   background-color: var(--title-color);
   /* Medium devices */
 }
