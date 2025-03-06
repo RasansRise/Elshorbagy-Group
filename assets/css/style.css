@@ -3983,6 +3983,8 @@ a.text-theme:hover,
 .main-menu ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 .main-menu ul li {
   list-style-type: none;
@@ -4363,11 +4365,8 @@ a.text-theme:hover,
 }
 
 .logo-style1 {
-  background: linear-gradient(278.46deg, #00bcfa 0.91%, #0e59f2 71.89%, #0e59f2 100%);
-  padding: 30px 35px 30px 35px;
-  border-radius: 5px 0px 0px 5px;
-  line-height: 0;
-  margin: -1px 0;
+  padding: 30px 0;
+  max-width:200px;
 }
 
 .header-btns {
@@ -4561,7 +4560,7 @@ a.text-theme:hover,
 }
 .header-layout2 .menu-area {
   background-color: var(--white-color);
-  padding: 0 30px 0 0;
+  padding: 0 30px 0 30px;
   border-radius: 5px;
   box-shadow: 0px 17px 29px rgba(32, 56, 105, 0.18);
 }
@@ -13147,7 +13146,8 @@ blockquote.vs-quote .quote-author {
   position: absolute;
   right: 0;
   left: 0;
-  top: 60px;
+  top: 0px;
+  padding:20px 0;
   /* Large devices */
   /* Medium devices */
 }
@@ -13170,6 +13170,7 @@ blockquote.vs-quote .quote-author {
 }
 .header-ltb7 .header-logo {
   padding-bottom: 16.5px;
+  max-width: 200px;
   /* Large devices */
   /* Medium devices */
 }
@@ -13210,9 +13211,6 @@ blockquote.vs-quote .quote-author {
   padding-bottom: 10px;
   padding-top: 10px;
 }
-.header-ltb7 .will-sticky .sticky-active.active .header-logo img {
-  filter: brightness(1) invert(1);
-}
 .header-ltb7 .will-sticky .sticky-active.active .menu-styletb7 > ul > li > a {
   color: #0e0d0d;
 }
@@ -13226,16 +13224,7 @@ blockquote.vs-quote .quote-author {
   color: var(--tb-color1);
 }
 
-.menu-styletb7 {
-  margin-left: 120px;
-  /* Extra large devices */
-  /* Large devices */
-}
-@media (max-width: 1500px) {
-  .menu-styletb7 {
-    margin-left: 30px;
-  }
-}
+
 @media (max-width: 1199px) {
   .menu-styletb7 {
     text-align: right;
@@ -13406,7 +13395,7 @@ blockquote.vs-quote .quote-author {
   font-weight: 700;
 }
 .hero-info.tb7 .media-icon, .hero-info.tb8 .media-icon {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 .hero-info.tb8 .media-label {
   color: var(--tb-color2);
