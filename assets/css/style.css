@@ -122,6 +122,9 @@ Version: 1.0.0
   background: rgb(19 55 115 / 30%);
   z-index: 100;
 }
+.ls-slide-backgrounds img{
+  height:auto !important;
+}
 .overlay-layer *{
 
   z-index: 101;
