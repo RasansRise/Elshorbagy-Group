@@ -6623,6 +6623,9 @@ blockquote.vs-quote .quote-author {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
+  background-color: white;
+  padding : 10px 20px 10px 0px;
+  border-radius: 10px;
 }
 .hero-info .media-icon {
   margin-right: 25px;
@@ -6637,7 +6640,7 @@ blockquote.vs-quote .quote-author {
 .hero-info .media-link {
   font-size: 36px;
   font-weight: 700;
-  color: var(--white-color);
+  color: var(--black-color);
   font-family: var(--title-font);
 }
 .hero-info .media-link a {
@@ -13143,6 +13146,7 @@ blockquote.vs-quote .quote-author {
   left: 0;
   top: 0px;
   padding:40px 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.51) 100%);
   /* Large devices */
   /* Medium devices */
 }
@@ -13371,7 +13375,7 @@ blockquote.vs-quote .quote-author {
 .hero-info.tb7 .media-label, .hero-info.tb8 .media-label {
   font-family: var(--body-font);
   font-size: 16px;
-  color: var(--white-color);
+  color: var(--black-color);
   margin-bottom: 0;
   line-height: 30px;
   font-weight: 400;
