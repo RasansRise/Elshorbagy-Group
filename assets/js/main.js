@@ -913,24 +913,28 @@
   $(".circle_percent").each(function () {
     circleObserver.observe(this);
   });
-
+  const sliders = document.querySelector('#sectorSlider').children.length;
   $('#sectorSlider').slick({
     centerMode: true,
-    centerPadding: '0px',         
-    slidesToShow: 3,              
+    centerPadding: '0px',
+    slidesToShow: sliders-1,
     arrows: false,
-    dots:true,
-    infinite:true,
+    dots: true,
+    infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
+      
+
       {
         breakpoint: 768,
         settings: {
-          centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,          
         }
-      }
+      },
+      
     ]
-  });
+  });  
+
+  
 })(jQuery);

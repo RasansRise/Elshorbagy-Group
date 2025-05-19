@@ -9,7 +9,10 @@
     <meta name="description" content="TechBiz - IT Solution & Service HTML Template">
     <meta name="keywords" content="TechBiz - IT Solution & Service HTML Template" />
     <meta name="robots" content="INDEX,FOLLOW">
-
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
 
     <!-- Favicons - Place favicon.ico in the root directory -->
     <link rel="icon" href="assets/img/logo.png" />
@@ -43,17 +46,11 @@
     <link rel="stylesheet" href="assets/css/slick.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-      <style>
-
-        /* .slick-slide {
-          transform: scale(0.8);
-          transition: 0.3s;
-        }
-        .slick-current{
-          transform: scale(1);
- */
-        /* } */
-      </style>
+    <style>
+      #sectorSlider img{
+        max-width: 500px;
+      }
+    </style>
 </head>
 
 <body>
@@ -196,9 +193,14 @@
                   </div>
                 </div>
               </div>
-                <div id="sectorSlider" class="flex flex-row gap-5">
-                    <img src="assets/img/Elshorbagy Sectors/sectors/Metal&Crytal/الحديد و الكريتال.webp" alt="">
-                    <img src="assets/img/Elshorbagy Sectors/sectors/Metal&Crytal/الحديد و الكريتال2.webp" alt="">
+                <div id="sectorSlider" class="row">
+                    <div >
+                      <img src="assets/img/Elshorbagy Sectors/sectors/Metal&Crytal/الحديد و الكريتال.webp" alt="" class="d-block m-auto">
+                    </div>
+                   
+                    <div >
+                      <img src="assets/img/Elshorbagy Sectors/sectors/Metal&Crytal/الحديد و الكريتال2.webp" alt="" class="d-block m-auto">
+                    </div>
                 </div>
 
         </div>
@@ -345,27 +347,7 @@
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 
-    <script>
-      $('#sectorSlider').slick({
-        centerMode: true,
-        centerPadding: '0px',         
-        slidesToShow: 1,              
-        arrows: false,
-        dots:true,
-        infinite:true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    </script>
+    
 </body>
 
 </html>
