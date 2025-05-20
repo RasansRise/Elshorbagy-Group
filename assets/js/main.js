@@ -136,29 +136,30 @@
   function stickyMenu($targetMenu, $toggleClass, $parentClass) {
     var st = $(window).scrollTop();
     var height = $targetMenu.css("height");
+  
     $targetMenu.parent().css("min-height", height);
-    if ($(window).scrollTop() > 800) {
+  
+    if (st > 800) {
+      // أضف الكلاسات مباشرة عند التمرير أكثر من 800
       $targetMenu.parent().addClass($parentClass);
-
-      if (st > lastScrollTop) {
-        $targetMenu.removeClass($toggleClass);
-      } else {
-        $targetMenu.addClass($toggleClass);
-      }
+      $targetMenu.addClass($toggleClass);
     } else {
+      // شيل الكلاسات لو أقل من 800
       $targetMenu.parent().css("min-height", "").removeClass($parentClass);
       $targetMenu.removeClass($toggleClass);
     }
-    lastScrollTop = st;
   }
+  
   $(window).on("scroll", function () {
     stickyMenu($(".sticky-active"), "active", "will-sticky");
+  
     if ($(this).scrollTop() > 500) {
       $(scrollToTopBtn).addClass("show");
     } else {
       $(scrollToTopBtn).removeClass("show");
     }
   });
+  
 
   /*---------- 05. Scroll To Top ----------*/
   $(scrollToTopBtn).each(function () {

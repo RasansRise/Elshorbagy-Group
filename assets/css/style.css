@@ -3850,7 +3850,23 @@ a.text-theme:hover,
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
 }
 .will-sticky .sticky-active.active {
-  top: 0;
+  animation: slideDown 0.8s ease forwards;
+}
+@keyframes slideDown {
+  0%{
+    top:-100%;
+  }
+  100%{
+    top:0;
+  }
+}
+@keyframes slideUp {
+  0%{
+    top:0;
+  }
+  100%{
+    top:-100%;
+  }
 }
 .will-sticky .sticky-active.active .header-layout4 .menu-style1 > ul > li > a {
   color: #071a3e;
