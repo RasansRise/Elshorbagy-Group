@@ -11930,9 +11930,7 @@ blockquote.vs-quote .quote-author {
 }
 /*------------------- 4.23. Contact  -------------------*/
 .contact-tab-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+
   margin: 0 0 60px 0;
 }
 .contact-tab-menu .btn-img {
@@ -11945,33 +11943,39 @@ blockquote.vs-quote .quote-author {
   font-size: 18px;
   font-weight: 600;
   font-family: var(--title-font);
-  margin: 4px 0 0 0;
+  margin: 4px 0 4px 0 ;
   transition: all ease 0.4s;
 }
 .contact-tab-menu .btn-text {
-  display: inline-block;
+  display: flex;
+  align-items: start;
   color: var(--body-color);
   font-size: 14px;
   font-family: var(--title-font);
   margin: 2px 0 0 0;
+  text-align: right;
   transition: all ease 0.4s;
 }
-.contact-tab-menu button {
+.contact-tab-menu .btn-text i{
+  margin-inline-end:5px;
+}
+.contact-tab-menu .nav-link  {
   padding: 20px;
   position: relative;
-  width: 100%;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   text-align: left;
   background-color: transparent;
   border: 1px solid #F0F0F0;
 }
-.contact-tab-menu button.active, .contact-tab-menu button:hover {
+.contact-tab-menu .nav-link .active, .contact-tab-menu .nav-link:hover {
   background-color: var(--theme-color);
   border-color: transparent;
 }
-.contact-tab-menu button.active .btn-text,
-.contact-tab-menu button.active .btn-title, .contact-tab-menu button:hover .btn-text,
-.contact-tab-menu button:hover .btn-title {
+.contact-tab-menu .nav-link .active .btn-text,
+.contact-tab-menu .nav-link .active .btn-title, .contact-tab-menu .nav-link:hover .btn-text,
+.contact-tab-menu .nav-link:hover .btn-title {
   color: var(--white-color);
 }
 
@@ -12044,7 +12048,7 @@ blockquote.vs-quote .quote-author {
   .contact-box__form input {
     font-size: 14px;
   }
-  .contact-tab-menu button {
+  .contact-tab-menu .nav-link  {
     text-align: center;
   }
   .contact-tab-menu .btn-title {
