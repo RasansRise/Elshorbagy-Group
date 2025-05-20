@@ -913,11 +913,15 @@
   $(".circle_percent").each(function () {
     circleObserver.observe(this);
   });
+  
+  Fancybox.bind("[data-fancybox]", {
+        
+  });
   const sliders = document.querySelector('#sectorSlider').children.length;
   $('#sectorSlider').slick({
     centerMode: true,
     centerPadding: '0px',
-    slidesToShow: sliders-1,
+    slidesToShow: sliders-1 > 3 ? 3 : sliders-1,
     arrows: false,
     dots: true,
     infinite: true,
@@ -936,5 +940,4 @@
     ]
   });  
 
-  
 })(jQuery);

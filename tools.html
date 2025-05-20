@@ -35,6 +35,8 @@
 	    All CSS File
 	============================== -->
     <!-- Bootstrap -->
+    <link href="assets/css/fancybox.css" rel="stylesheet" />
+
     <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
@@ -113,8 +115,8 @@
   Header Area
   ==============================-->
   <header class="vs-header header-ltb7 rtl">
-    <div>
-        <div>
+    <div class="sticky-wrapper">
+      <div class="sticky-active">
             <div class="container">
                 <div class="row align-items-center  justify-content-between gx-15">
                     <div class="col-auto">
@@ -172,7 +174,7 @@
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
+    <div class="breadcumb-wrapper " data-bg-src="../assets/img/sector/cover.webp">
         
     </div>
     <!--==============================
@@ -184,19 +186,28 @@
                 <div class="col-xl-6">
                   <div class="title-area">
                     <h2 class="sec-title h1 rtl">
-
                         العدد والالات
                     </h2>
                   </div>
                 </div>
               </div>
                 <div id="sectorSlider">
-                      <img src="assets/img/Elshorbagy Sectors/sectors/tools/العدد الكهربائية.webp" alt="">
-                      <img src="assets/img/Elshorbagy Sectors/sectors/tools/العدد اليدوية.webp" alt="">
-                      <img src="assets/img/Elshorbagy Sectors/sectors/tools/المعدات والمحركات.webp" alt="">
-                      <img src="assets/img/Elshorbagy Sectors/sectors/tools/المولدات.webp" alt="">
+                      <a href="assets/img/Elshorbagy Sectors/sectors/tools/العدد الكهربائية.webp" data-fancybox data-caption="العدد الكهربائية">
+                        <img src="assets/img/Elshorbagy Sectors/sectors/tools/العدد الكهربائية.webp" alt=""> 
+                      </a>
+                      <a href="assets/img/Elshorbagy Sectors/sectors/tools/العدد اليدوية.webp" data-fancybox data-caption="العدد اليدوية">
+                        <img src="assets/img/Elshorbagy Sectors/sectors/tools/العدد اليدوية.webp" alt="">
+                      </a>
+                      <a href="assets/img/Elshorbagy Sectors/sectors/tools/المعدات والمحركات.webp" data-fancybox data-caption="المعدات والمحركات">
+                        <img src="assets/img/Elshorbagy Sectors/sectors/tools/المعدات والمحركات.webp" alt="">
+                      </a>
+                      <a href="assets/img/Elshorbagy Sectors/sectors/tools/المولدات.webp" data-fancybox data-caption="المولدات">
+                        <img src="assets/img/Elshorbagy Sectors/sectors/tools/المولدات.webp" alt="">
+                      </a>
+                      <a href="assets/img/Elshorbagy Sectors/sectors/tools/معدات الهواء.webp" data-fancybox data-caption="معدات الهواء">
+                        <img src="assets/img/Elshorbagy Sectors/sectors/tools/معدات الهواء.webp" alt="">
+                      </a>
 
-                      <img src="assets/img/Elshorbagy Sectors/sectors/tools/معدات الهواء.webp" alt="">
   
                 </div>
 
@@ -374,10 +385,11 @@
     <!-- Isotope Filter -->
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+    
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
-
-
+    
 </body>
 
 </html>

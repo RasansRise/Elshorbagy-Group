@@ -35,6 +35,8 @@
 	============================== -->
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="assets/css/app.min.css"> -->
+    <link href="assets/css/fancybox.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- Fontawesome Icon -->
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
@@ -112,8 +114,8 @@
   Header Area
   ==============================-->
   <header class="vs-header header-ltb7 rtl">
-    <div>
-        <div>
+    <div class="sticky-wrapper">
+      <div class="sticky-active">
             <div class="container">
                 <div class="row align-items-center  justify-content-between gx-15">
                     <div class="col-auto">
@@ -171,7 +173,7 @@
     <!--==============================
     Breadcumb
 ============================== -->
-    <div class="breadcumb-wrapper " data-bg-src="assets/img/breadcumb/breadcumb-bg.jpg">
+    <div class="breadcumb-wrapper " data-bg-src="../assets/img/sector/cover.webp">
         
     </div>
     <!--==============================
@@ -188,23 +190,19 @@
                   </div>
                 </div>
               </div>
-                <div id="sectorSlider" class="flex flex-row gap-5">
-                  <div class="col-4">                
-                    <img src="assets/img/Elshorbagy Sectors/sectors/Safety/الإنذار وشبكات الحريق.webp" alt="">
-                  </div>
-                
-                  <div class="col-4">                
-                    <img src="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات الطرق والسلامة.webp" alt="">
-                  </div>
-                
-                  <div class="col-4">                
-                    <img src="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات الوقاية الشخصية.webp" alt="">
-                  </div>
-                
-                  <div class="col-4">                
-                    <img src="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات مكافحة الحريق.webp" alt="">
-                  </div>
-  
+                <div id="sectorSlider" >
+                    <a href="assets/img/Elshorbagy Sectors/sectors/Safety/الإنذار وشبكات الحريق.webp" data-fancybox data-caption="الإنذار وشبكات الحريق">
+                      <img src="assets/img/Elshorbagy Sectors/sectors/Safety/الإنذار وشبكات الحريق.webp" alt="">
+                    </a>
+                    <a href="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات الطرق والسلامة.webp" data-fancybox data-caption="مهمات الطرق والسلامة">
+                      <img src="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات الطرق والسلامة.webp" alt="">
+                    </a>
+                    <a href="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات الوقاية الشخصية.webp" data-fancybox data-caption="مهمات الوقاية الشخصية">
+                      <img src="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات الوقاية الشخصية.webp" alt="">
+                    </a>
+                    <a href="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات مكافحة الحريق.webp" data-fancybox data-caption="مهمات مكافحة الحريق">
+                      <img src="assets/img/Elshorbagy Sectors/sectors/Safety/مهمات مكافحة الحريق.webp" alt="">
+                    </a>
                 </div>
 
         </div>
@@ -379,6 +377,8 @@
     <!-- Isotope Filter -->
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script>
+
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
 
