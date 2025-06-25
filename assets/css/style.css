@@ -112,7 +112,9 @@ Version: 1.0.0
   background: rgb(19 55 115 / 30%);
   z-index: 100;
 }
-
+.ls-slide-backgrounds{
+  background-color: var(--theme-color);
+}
 .ls-slide-backgrounds img{
   height:auto !important;
   filter:brightness(0.8) !important;
