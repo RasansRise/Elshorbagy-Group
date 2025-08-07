@@ -112,9 +112,9 @@ Version: 1.0.0
   background: rgb(19 55 115 / 30%);
   z-index: 100;
 }
-.ls-slide-backgrounds{
+/* .ls-slide-backgrounds{
   background-color: var(--theme-color);
-}
+} */
 .ls-slide-backgrounds img{
   height:auto !important;
   filter:brightness(0.8) !important;
@@ -5239,6 +5239,19 @@ a.text-theme:hover,
   padding-bottom: 250px;
   background-color: var(--title-color);
   /* Medium devices */
+  position: relative;
+}
+.breadcumb-wrapper:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  background-size: cover;
+  background-position: center;
+  opacity:0.3;
 }
 @media (max-width: 991px) {
   .breadcumb-wrapper {
