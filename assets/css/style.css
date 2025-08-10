@@ -2456,6 +2456,10 @@ textarea.is-invalid {
     letter-spacing: 0;
     text-align: center;
   }
+  .edit-bg {
+    background-repeat: unset;
+    background-size: cover;
+  }
 }
 /*------------------- 3.6. Font -------------------*/
 .font-icon {
@@ -2533,6 +2537,9 @@ textarea.is-invalid {
   background-size: cover;
   background-position: center center;
 }
+
+
+
 
 .bg-fluid {
   background-repeat: no-repeat;
@@ -5257,6 +5264,11 @@ a.text-theme:hover,
   .breadcumb-wrapper {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+  .edit-bg {
+    background-repeat: unset;
+    background-size: cover;
+    background-position: center;
   }
 }
 
@@ -15825,3 +15837,21 @@ blockquote.vs-quote .quote-author {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.edit-bg {
+
+  
+   background-repeat: unset;
+  background-size: unset !important;
+      /* background-position: center center; */
+      background-position: top 73px center;
+}
+
+@media (max-width: 991px) {
+  .edit-bg {
+    background-repeat: unset;
+    background-size: cover !important;
+    /* background-position: center; */
+  }
+}
