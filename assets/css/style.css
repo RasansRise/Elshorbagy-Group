@@ -129,8 +129,23 @@ Version: 1.0.0
   --theme-color: #0037ff;
   --smoke-color: #f6f7fc;
 }
-
+.border-slider a{
+  border : 1px solid #8686868b;
+}
+.border-slider a p{
+  color:var(--theme-color);
+  font-weight:bold;
+  text-align: center;
+  font-size:24px;
+  margin:0;
+  padding:10px;
+  border-top:1px solid #8686868b;
+}
+#sectorSlider img{
+  max-width:100%;
+}
 @media(min-width:768px){
+  
   #sectorSlider .slick-slide {
     transform: scale(0.9);
   }
