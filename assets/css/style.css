@@ -144,6 +144,11 @@ Version: 1.0.0
 #sectorSlider img{
   max-width:100%;
 }
+@media(max-width:768px){
+  .slick-list{
+    margin-bottom:40px;
+  }
+}
 @media(min-width:768px){
   
   #sectorSlider .slick-slide {
