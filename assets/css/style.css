@@ -15875,3 +15875,7 @@ blockquote.vs-quote .quote-author {
     /* background-position: center; */
   }
 }
+
+.metals-crytal .fancybox__content {
+  background-color: white !important;
+}
