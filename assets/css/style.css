@@ -15879,3 +15879,45 @@ blockquote.vs-quote .quote-author {
 .metals-crytal .fancybox__content {
   background-color: white !important;
 }
+
+.seam-image {
+     height: 268px !important;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .seam-image {
+  height: 199px !important;
+    object-fit: cover;
+  }
+  
+}
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  .seam-image {
+  height: 229px !important;
+    object-fit: cover;
+  }
+  
+}
+@media screen and (min-width: 1300px) and (max-width: 1310px) {
+  .seam-image {
+  height: 257px !important;
+    object-fit: cover;
+  }
+  
+}
+@media screen and (min-width: 1311px) and (max-width: 1338px) {
+  .seam-image {
+  height: 260px !important;
+    object-fit: cover;
+  }
+  
+}
+
+@media screen and (max-width: 767px) {
+  .seam-image {
+    height: auto !important;
+    object-fit: cover;
+  }
+}
+
