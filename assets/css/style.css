@@ -102,7 +102,21 @@ Version: 1.0.0
 .overlay-layer{
   position: relative;
 }
-
+.outline-form input,.outline-form textarea{
+  border:1px solid var(--theme-color) !important;
+}
+.outline-form input[type="file"]{
+  padding-top:15px;
+}
+.outline-form label{
+  position: absolute;
+    background-color: white;
+    padding: 5px;
+    top: -50%;
+    transform: translateY(50%);
+    color: var(--theme-color);
+    right: 20px;
+}
 .overlay-layer::before{
   content: "";
   display: block;
