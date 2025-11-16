@@ -102,6 +102,7 @@ Version: 1.0.0
 .overlay-layer{
   position: relative;
 }
+
 .overlay-layer::before{
   content: "";
   display: block;
@@ -907,7 +908,16 @@ ul.wp-block-rss a {
     02. Reset
 ==================================*/
 /*------------------- 2.1. Container -------------------*/
+@media only screen and (min-width:576px){
+  .w-sm-100{
+    width:100% !important;
+  }
+  .h-sm-100{
+    height: 100% !important;
+  }
+}
 @media only screen and (min-width: 1300px) {
+  .container-xxxl,
   .container-xxl,
   .container-xl,
   .container-lg,
@@ -918,7 +928,13 @@ ul.wp-block-rss a {
     padding-left: calc(var(--container-gutters) / 2);
     padding-right: calc(var(--container-gutters) / 2);
   }
+  .container-xxxl {
+    --main-container:1980px;
+    margin:auto;
+  }
+
 }
+
 @media only screen and (max-width: 1600px) {
   .container-fluid.px-0 {
     padding-left: 15px !important;
