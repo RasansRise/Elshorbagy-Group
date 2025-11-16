@@ -4012,7 +4012,7 @@ a.text-theme:hover,
   font-size: 20px;
   color: var(--title-color);
 }
-@media(width>=1200px) and (width<=1360px){
+@media(width>=1200px) and (width<=1390px){
   .main-menu a{
     font-size:15px;
   }
