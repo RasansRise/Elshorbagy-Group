@@ -43,7 +43,7 @@ Version: 1.0.0
     4.6. Blog
     4.7. Comments
     4.8. Hero Area
-    4.9. Error    
+    4.9. Error
     4.10. Feature
     4.11. About
     4.12. Service
@@ -92,6 +92,10 @@ Version: 1.0.0
   --section-space-mobile: 80px;
   --section-title-space: 80px;
   --ripple-ani-duration: 5s;
+}
+.mfp-iframe-holder .mfp-content{
+  max-width:400px;
+  aspect-ratio: 0.5625;
 }
 .rtl{
   direction:rtl;
@@ -165,7 +169,7 @@ Version: 1.0.0
   }
 }
 @media(min-width:768px){
-  
+
   #sectorSlider .slick-slide {
     transform: scale(0.9);
   }
@@ -15895,7 +15899,7 @@ blockquote.vs-quote .quote-author {
 
 .edit-bg {
 
-  
+
    background-repeat: unset;
   background-size: unset !important;
       /* background-position: center center; */
@@ -15924,28 +15928,28 @@ blockquote.vs-quote .quote-author {
   height: 199px !important;
     object-fit: cover;
   }
-  
+
 }
 @media screen and (min-width: 1200px) and (max-width: 1299px) {
   .seam-image {
   height: 229px !important;
     object-fit: cover;
   }
-  
+
 }
 @media screen and (min-width: 1300px) and (max-width: 1310px) {
   .seam-image {
   height: 257px !important;
     object-fit: cover;
   }
-  
+
 }
 @media screen and (min-width: 1311px) and (max-width: 1338px) {
   .seam-image {
   height: 260px !important;
     object-fit: cover;
   }
-  
+
 }
 
 @media screen and (max-width: 767px) {
@@ -15954,4 +15958,3 @@ blockquote.vs-quote .quote-author {
     object-fit: cover;
   }
 }
-

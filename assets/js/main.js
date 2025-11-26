@@ -10,10 +10,10 @@
     04. Sticky fix
     05. Scroll To Top
     06. Set Background Image
-    07. Hero Slider Active 
+    07. Hero Slider Active
     08. Global Slider
     09. Ajax Contact Form
-    10. Popup Sidemenu   
+    10. Popup Sidemenu
     11. Magnific Popup
     12. Section Position
     13. Filter
@@ -136,9 +136,9 @@
   function stickyMenu($targetMenu, $toggleClass, $parentClass) {
     var st = $(window).scrollTop();
     var height = $targetMenu.css("height");
-  
+
     $targetMenu.parent().css("min-height", height);
-  
+
     if (st > 800) {
       // أضف الكلاسات مباشرة عند التمرير أكثر من 800
       $targetMenu.parent().addClass($parentClass);
@@ -149,17 +149,16 @@
       $targetMenu.removeClass($toggleClass);
     }
   }
-  
+
   $(window).on("scroll", function () {
     stickyMenu($(".sticky-active"), "active", "will-sticky");
-  
+
     if ($(this).scrollTop() > 500) {
       $(scrollToTopBtn).addClass("show");
     } else {
       $(scrollToTopBtn).removeClass("show");
     }
   });
-  
 
   /*---------- 05. Scroll To Top ----------*/
   $(scrollToTopBtn).each(function () {
@@ -914,31 +913,25 @@
   $(".circle_percent").each(function () {
     circleObserver.observe(this);
   });
-  
-  Fancybox.bind("[data-fancybox]", {
-        
-  });
-  const sliders = document.querySelector('#sectorSlider').children.length;
-  $('#sectorSlider').slick({
+
+  Fancybox.bind("[data-fancybox]", {});
+  const sliders = document.querySelector("#sectorSlider").children.length;
+  $("#sectorSlider").slick({
     centerMode: true,
-    centerPadding: '0px',
-    slidesToShow: sliders-1 > 3 ? 3 : sliders-1,
+    centerPadding: "0px",
+    slidesToShow: sliders - 1 > 3 ? 3 : sliders - 1,
     arrows: false,
     dots: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
-      
-
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,          
-        }
+          slidesToShow: 1,
+        },
       },
-      
-    ]
-  });  
-
+    ],
+  });
 })(jQuery);
